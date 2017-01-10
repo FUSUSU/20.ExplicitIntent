@@ -10,28 +10,24 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.teo.a20explicitintent.Main2Activity">
 
-    <Button
-        android:id="@+id/button01"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_below="@id/textView01"
-        android:layout_marginLeft="65dp"
-        android:layout_marginTop="38dp"
-        android:onClick="onClick"
-        android:text="Call First Activity"
-        />
     <TextView
         android:id="@+id/textView01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@id/button1"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="18dp"
-        android:layout_marginTop="27dp"
         android:minHeight="60dip"
-        android:Text="Second Activity"
+        android:textStyle="bold"
+        android:text="Second Activity"
         android:textSize="20sp"
-        />
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:onClick="onClick"
+        android:text="Call First Activity"
+        android:layout_below="@+id/textView01"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
